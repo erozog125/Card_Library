@@ -1,5 +1,3 @@
-alert('Modificando Card');
-
 const btnReduce = document.querySelector('#btn-reduce');
 const btnAdd = document.querySelector('#btn-add');
 const lblPx = document.querySelector('.lbl-px');
@@ -7,6 +5,8 @@ const colorCard = document.querySelector('#color-card');
 const card = document.querySelector('.card');
 const headerCard = document.querySelector('.header-card');
 const btnChangeColor = document.getElementById('change-color');
+const myCV = document.querySelector('#my-cv');
+const folder = document.querySelector('.fa-folder-open');
 
 
 events();
@@ -35,7 +35,9 @@ function reducePixels() {
 }
 
 function changeColor() {
-headerCard.style.background = colorCard.value;
+  headerCard.style.background = colorCard.value;
+  myCV.style.background = colorCard.value;
+  folder.style.color = colorCard.value;
 }
 
 
