@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
-@import url(/Normalize.css);
 
 body {
   margin: 0;
@@ -11,10 +10,10 @@ body {
   align-items: center;  
 }
 
-header {
+body header {
   width: 100%;
   border: groove rgb(245, 9, 146) 2px;
-  height: 20%;
+  height: 30%;
   display: flex;
   justify-content: center;
 }
@@ -27,21 +26,15 @@ header h1 {
 
 main {
   width: 100%;  
-  margin-top: 2em;
-  display: grid;  
-  grid-auto-rows: 30rem;
-  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr)); 
-  grid-template-rows: 1fr; 
-  gap: 1rem 1rem;   
-}
-
-main a {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  margin: 1rem;
 }
 
 main img {
-  width: 60%;
+  width: 80%;
+  margin: 1rem;
 }
 
 main img:hover {
@@ -50,22 +43,29 @@ main img:hover {
   border: solid 3px #ffffff;
 }
 
+main a {
+  display: flex;
+  justify-content: center;
+}
+
 footer {
  font-family: 'Dancing Script', cursive;
  display: flex;
  justify-content: center;
  align-items: center;
+ flex-wrap: wrap;
+ line-height: 0.5rem;
 }
 
 footer p {
   color: rgb(149, 43, 224);
-  font-size: 1rem;
+  font-size: 3rem;
 }
 
 footer a {
   color: #ffffff;
-  text-decoration: none;
-  font-size: 2rem;
+  text-decoration: none;  
+  font-size: 3rem;
 }
 
 footer a:hover {
